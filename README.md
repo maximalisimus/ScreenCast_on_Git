@@ -1,5 +1,7 @@
 # ScreenCast_on_Git
 
+https://github.com/maximalisimus/ScreenCast_on_Git.git
+
 https://maximalisimus.github.io/ScreenCast_on_Git/
 
 Видео уроки по GIT с youtube канала  JavaScript.ru
