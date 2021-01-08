@@ -1,0 +1,301 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>Скринкаст по GIT</title>
+	<style type="text/css">
+		BODY {
+			font-family: Arial, Verdana, Helvetica, sans-serif;
+			font-size: 1em;
+			background-color:#F6F9FC;
+			color: black; 
+			margin:0;
+		}
+		.site {
+			position: absolute;
+			display: block;
+			width: 99%;
+			height: 99%;
+			left: 0;
+			top: 0;
+			margin: 0;
+			padding: 0;
+			background-color: #F6F9FC;
+			color: black;
+		}
+		.header {
+			width: 100%;
+			height: 7%;
+			display: block;
+			position: relative;
+			background-color: #333;
+			margin: 0px;
+			padding: 0px;
+			color: white;
+			top: 0px;
+			left: 0px;
+			border: 1px solid black;
+		}
+		.header p {
+			display: inline-block;
+			position: relative;
+			font-size: 2em;
+			font-weight: bold;
+			color: white;
+			margin: 5%;
+			padding: 0px;
+			top: -20%;
+			left: 1%;
+		}
+		.content {
+			background-color: #ECF2F5;
+			color: black;
+			border: 1px solid gray;
+			display: block;
+			position: relative;
+			width: 100%;
+			height: 86%;
+			border: 1px solid black;
+			margin: 0px;
+			padding: 0px;
+		}
+		.about {
+			margin: 0px;
+			padding: 0px;
+			background-color: #c9c6c6;
+			color: black;
+			border: 1px solid gray;
+			display: block;
+			position: relative;
+			font-size: 0.8em;
+			width: 100%;
+			height: 7%;
+		}
+		.about p {
+			margin: 1%;
+			padding: 0px;
+		}
+		#playlist {
+			display:inline-block;
+			overflow-y:scroll;
+			overflow-x:scroll;
+			margin-top: 1%;
+			margin-left: 10px;
+			padding: 0px;
+			border: 1px solid black;
+			width: calc(98% - 730px);
+			background-color: #D1D1D1;
+			border: 1px solid black;
+			border-radius: 1px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			height:93%;
+			width: 98%;
+		}
+		#playlist p {
+			display: block;
+			width: 100%;
+			height: 5%;
+			background-color: black;
+			color: white;
+			font-weight: bold;
+			font-size: 1.2em;
+			margin: 0px;
+			padding: 10px 0px 10px 10px;
+		}
+		#playlist ul {
+			list-style:none;
+			margin: 10px 0px 10px 10px;
+			padding: 0px;
+			display: block;
+		}
+		#playlist ul li {
+			margin: 10px;
+			padding: 0px;
+			display: block;
+			color:black;
+			cursor:default;
+		}
+		#playlist ul li ul {
+			margin: 0px;
+			padding: 0px;
+			display: block;
+		}
+		#playlist ul li ul li {
+			margin: 10px 0px 10px 20px;
+			padding: 0px;
+			display: block;
+		}
+		#playlist ul li ul li, #playlist ul li ul li:visited {
+			text-decoration:none;
+			color:black;
+			cursor:default;
+			display: block;
+		}
+		#playlist ul li ul li:hover, #playlist ul li ul li.active {
+			text-decoration:none;
+			cursor:pointer;
+			color:white;
+			background-color:black;
+			transition: 0.3s linear;
+			border-radius: 5px;
+			padding: 10px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="site">
+		<div class="header">
+			<p style="margin:10px; padding:0px;">Скринкаст по GIT</p>
+		</div>
+		<div class="content">
+			<div id="playlist">
+				<p>Список воспроизведения:</p>
+				<ul>
+					<li>1. Введение
+						<ul>
+							<li onclick="RPClass(this);">1.1 Что такое Git</li>
+							<li onclick="RPClass(this);">1.2 Установка Git под Linux и Mac</li>
+							<li onclick="RPClass(this);">1.3 Настройка профиля под Unix-системами</li>
+							<li onclick="RPClass(this);">1.4 Установка Git под Windows</li>
+							<li onclick="RPClass(this);">1.5 Windows Git Bash, Powershell</li>
+						</ul>
+					</li>
+					<li>2. Конфигурация
+						<ul>
+							<li onclick="RPClass(this);">2.1 Основы</li>
+							<li onclick="RPClass(this);">2.2 Настройка редактора</li>
+							<li onclick="RPClass(this);">2.3 Алиасы - псевдонимы для команд</li>
+							<li onclick="RPClass(this);">2.4  Проблема с переводами строк Windows Linux</li>
+							<li onclick="RPClass(this);">2.5 Настройка core.autocrlf для нормализации переводов строк</li>
+							<li onclick="RPClass(this);">2.6 Атрибуты .gitattributes, text, eol</li>
+							<li onclick="RPClass(this);">2.7 Игнорирование .gitignore</li>
+							<li onclick="RPClass(this);">2.8  Подключение файлов в конфиг include</li>
+						</ul>
+					</li>
+					<li>3. Основы
+						<ul>
+							<li onclick="RPClass(this);">3.1 Создание репозитория, первый коммит</li>
+							<li onclick="RPClass(this);">3.2 Добавление файлов и директорий, git status</li>
+							<li onclick="RPClass(this);">3.3 Хороший коммит</li>
+							<li onclick="RPClass(this);">3.4 Зачем нужен индекс</li>
+							<li onclick="RPClass(this);">3.5 Коммиты без git add</li>
+							<li onclick="RPClass(this);">3.6  Удаление и переименование файлов</li>
+						</ul>
+					</li>
+					<li>4. Ветки
+						<ul>
+							<li onclick="RPClass(this);">4.1 Введение</li>
+							<li onclick="RPClass(this);">4.2  Создание и переключение</li>
+							<li onclick="RPClass(this);">4.3  Команда checkout при незакоммиченных изменениях</li>
+							<li onclick="RPClass(this);">4.4  Передвижение веток вручную</li>
+							<li onclick="RPClass(this);">4.5 Состояние отделённой HEAD</li>
+							<li onclick="RPClass(this);">4.6  Восстановление предыдущих версий файлов</li>
+							<li onclick="RPClass(this);">4.7  Просмотр истории и старых версий</li>
+							<li onclick="RPClass(this);">4.8  Слияние перемоткой</li>
+							<li onclick="RPClass(this);">4.9 Удаление веток</li>
+							<li onclick="RPClass(this);">4.10 Лог ссылок reflog</li>
+							<li onclick="RPClass(this);">4.11 Сборка мусора</li>
+						</ul>
+					</li>
+					<li>5. Теги
+						<ul>
+							<li onclick="RPClass(this);">5.1 Теги, основные действия с тегами</li>
+							<li onclick="RPClass(this);">5.2 Использование тегов для экспорта с describe, archive</li>
+						</ul>
+					</li>
+					<li>6. Сброс
+						<ul>
+							<li onclick="RPClass(this);">6.1  Жесткий reset, отмена коммита</li>
+							<li onclick="RPClass(this);">6.2 Мягкий reset, замена и объединение коммитов</li>
+							<li onclick="RPClass(this);">6.3  Правка последнего коммита commit --amend</li>
+							<li onclick="RPClass(this);">6.4  Смешаный reset, отмена индексации</li>
+							<li onclick="RPClass(this);">6.5 Жесткий reset с сохранением изменений --keep</li>
+							<li onclick="RPClass(this);">6.6  Особый reset для отмены слияний --merge</li>
+							<li onclick="RPClass(this);">6.7 Виды reset – таблица в документации</li>
+						</ul>
+					</li>
+					<li>7. Очистка проекта от изменений
+						<ul>
+							<li onclick="RPClass(this);">7.1 Очистка проекта от изменений</li>
+						</ul>
+					</li>
+					<li>8. Просмотр
+						<ul>
+							<li onclick="RPClass(this);">8.1  Сравнение коммитов, веток и не только git diff</li>
+							<li onclick="RPClass(this);">8.2  Сравнение по словам, драйвер diff</li>
+							<li onclick="RPClass(this);">8.3  Сравнение разных форматов, кастомизация diff</li>
+							<li onclick="RPClass(this);">8.4  Вывод истории git log, форматирование коммитов</li>
+							<li onclick="RPClass(this);">8.5 Диапазоны коммитов для git log и не только</li>
+							<li onclick="RPClass(this);">8.6 Вывод git log коммитов, меняющих нужный файл</li>
+							<li onclick="RPClass(this);">8.7 Поиск в истории, фильтры для git log</li>
+							<li onclick="RPClass(this);">8.8 Кто написал эту строку git blame</li>
+						</ul>
+					</li>
+					<li>9. Слияние
+						<ul>
+							<li onclick="RPClass(this);">9.1  Истинное слияние и разрешение конфликтов в git merge</li>
+							<li onclick="RPClass(this);">9.2  Коммит слияния, дальнейшие слияния</li>
+							<li onclick="RPClass(this);">9.3  Отмена слияния</li>
+							<li onclick="RPClass(this);">9.4  Семантические конфликты и их разрешение</li>
+							<li onclick="RPClass(this);">9.5  Слияние с сохранением веток, запрет перемотки --no-ff</li>
+							<li onclick="RPClass(this);">9.6 Слияние без связи с источником merge --squash</li>
+							<li onclick="RPClass(this);">9.7 Слияние без конфликтов через драйвер union, свои драйверы</li>
+							<li onclick="RPClass(this);">9.8 Стратегии слияния</li>
+						</ul>
+					</li>
+					<li>10. Копирование коммитов
+						<ul>
+							<li onclick="RPClass(this);">10.1 Копирование коммитов cherry-pick</li>
+							<li onclick="RPClass(this);">10.2 Просмотр эквивалентных коммитов cherry, cherry-mark</li>
+						</ul>
+					</li>
+					<li>11. Перемещение коммитов
+						<ul>
+							<li onclick="RPClass(this);">11.1 Перебазирование веток rebase</li>
+							<li onclick="RPClass(this);">11.2 Rebase против merge сравнение подходов</li>
+							<li onclick="RPClass(this);">11.3 Тесты при rebase, rebase -x</li>
+							<li onclick="RPClass(this);">11.4  Перенос части ветки, rebase --onto</li>
+							<li onclick="RPClass(this);">11.5  Перебазирование слияний, rebase -p</li>
+							<li onclick="RPClass(this);">11.6 Интерактивное перебазирование, rebase -i</li>
+							<li onclick="RPClass(this);">11.7 Коммиты-заплатки rebase autosquash</li>
+						</ul>
+					</li>
+					<li>12. Авторазрешение
+						<ul>
+							<li onclick="RPClass(this);">12.1 Авторазрешение повторных конфликтов</li>
+						</ul>
+					</li>
+					<li>13. Обращение коммитов
+						<ul>
+							<li onclick="RPClass(this);">13.1 Обратные коммиты, revert</li>
+							<li onclick="RPClass(this);">13.2 Отмена слияния через revert</li>
+							<li onclick="RPClass(this);">13.3  Повторное слияние с rebase</li>
+						</ul>
+					</li>
+					<li>14. Даты в git
+						<ul>
+							<li onclick="RPClass(this);">14.1 Передача даты в гит, форматы дат</li>
+							<li onclick="RPClass(this);">14.2 Форматирование для вывода дат</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="about">
+			<p>Copyright &copy; 2020 by <a href="mailto:maximalis171091@yandex.ru">Mikhail Artamonov</a></p>
+		</div>
+	</div>
+	 <script type="text/javascript">
+		function RPClass(el) {
+			var nav=document.getElementById('playlist');
+			var links=nav.getElementsByTagName('li');
+			for (var i=0;i<links.length;i++) {
+				var li=links[i];
+				li.className='';
+			}
+			el.className = 'active';
+		}
+	</script>
+</body>
+</html>
