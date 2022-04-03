@@ -102,6 +102,12 @@
 			margin: 0px;
 			padding: 10px 0px 10px 10px;
 		}
+		#playlist p.head {
+			display: block;
+			color:black;
+			cursor:default;
+			background-color: grey;
+		}
 		#playlist ul {
 			list-style:none;
 			margin: 10px 0px 10px 10px;
@@ -151,6 +157,7 @@
 		<div class="content">
 			<div id="playlist">
 				<p>Список воспроизведения:</p>
+				<p class="head">Скринкаст по Git.</p>
 				<ul>
 					<li>1. Введение
 						<ul>
@@ -277,6 +284,156 @@
 						<ul>
 							<li onclick="RPClass(this);">14.1 Передача даты в гит, форматы дат</li>
 							<li onclick="RPClass(this);">14.2 Форматирование для вывода дат</li>
+						</ul>
+					</li>
+				</ul>
+				<p class="head">Git-Курс.</p>
+				<ul><li>1. Git – Введение
+						<ul>
+							<li onclick="RPClass(this);">1.1 Что такое Git</li>
+						</ul>
+					</li>
+					<li>2 Git – Основы.
+						<ul>
+							<li onclick="RPClass(this);">2.1 Конфигурация</li>
+							<li onclick="RPClass(this);">2.2 Создание репозитория, первый коммит</li>
+							<li onclick="RPClass(this);">2.3 Git и права на файлы</li>
+							<li onclick="RPClass(this);">2.4 Git show, кто такие автор и коммиттер</li>
+							<li onclick="RPClass(this);">2.5 Добавление файлов и директорий, git status</li>
+							<li onclick="RPClass(this);">2.6 Хороший коммит</li>
+							<li onclick="RPClass(this);">2.7 Зачем нужен индекс</li>
+							<li onclick="RPClass(this);">2.8 Коммиты без git add</li>
+							<li onclick="RPClass(this);">2.9 Удаление и переименование файлов</li>
+						</ul>
+					</li>
+					<li>3. Git – Ветки
+						<ul>
+							<li onclick="RPClass(this);">3.1 Введение</li>
+							<li onclick="RPClass(this);">3.2 Создание и переключение</li>
+							<li onclick="RPClass(this);">3.3 Команда checkout при незакоммиченных изменениях</li>
+							<li onclick="RPClass(this);">3.4 Перенос незакоммиченных изменений</li>
+							<li onclick="RPClass(this);">3.5 Перенос веток вручную</li>
+							<li onclick="RPClass(this);">3.6 Состояние отделённой HEAD</li>
+							<li onclick="RPClass(this);">3.7 Восстановление предыдущих версий файлов</li>
+							<li onclick="RPClass(this);">3.8 Просмотр истории и старых файлов, символы ~, ^, @, поиск с  -</li>
+							<li onclick="RPClass(this);">3.9 Слияние веток перемоткой</li>
+							<li onclick="RPClass(this);">3.10 Удаление веток</li>
+							<li onclick="RPClass(this);">3.11 История переключений веток - лог ссылок reflog</li>
+						</ul>
+					</li>
+					<li>4 Git – Удаление
+						<ul>
+							<li onclick="RPClass(this);">4.1 Удаление лишних файлов и незакоммиченных изменений</li>
+						</ul>
+					</li>
+					<li>5. Git – Reset
+						<ul>
+							<li onclick="RPClass(this);">5.1 Жесткий reset --hard - отмена изменений, удаление коммитов</li>
+							<li onclick="RPClass(this);">5.2 Мягкий reset --soft - замена и объединение коммитов</li>
+							<li onclick="RPClass(this);">5.3 Правка последнего коммита - commit --amend</li>
+							<li onclick="RPClass(this);">5.4 Смешанный reset (без флагов), сравнение видов reset</li>
+							<li onclick="RPClass(this);">5.5 Таблица с действиями reset</li>
+						</ul>
+					</li>
+					<li>6. Git – Просмотр
+						<ul>
+							<li onclick="RPClass(this);">6.1 Сравнение коммитов, веток и не только - git diff</li>
+							<li onclick="RPClass(this);">6.2 Вывод истории - git log, форматирование коммитов</li>
+							<li onclick="RPClass(this);">6.3 Диапазоны коммитов для git log и не только</li>
+							<li onclick="RPClass(this);">6.4 Вывод git log коммитов, меняющих нужный файл</li>
+							<li onclick="RPClass(this);">6.5 Поиск в истории, фильтры для git log</li>
+							<li onclick="RPClass(this);">6.6 Кто написал эту строку git blame</li>
+						</ul>
+					</li>
+					<li>7. Git – Слияние
+						<ul>
+							<li onclick="RPClass(this);">7.1 Истинное слияние и разрешение конфликтов в git merge</li>
+							<li onclick="RPClass(this);">7.2 Коммит слияния, дальнейшие слияния</li>
+							<li onclick="RPClass(this);">7.3 Отмена слияния</li>
+							<li onclick="RPClass(this);">7.4 Семантические конфликты и их разрешение</li>
+							<li onclick="RPClass(this);">7.5 Полезный приём - сохранение веток с флагом --no-ff</li>
+							<li onclick="RPClass(this);">7.6 Создание коммита из ветки - merge --squash</li>
+						</ul>
+					</li>
+					<li>8. Git – Копирование коммитов
+						<ul>
+							<li onclick="RPClass(this);">8.1 Копирование коммитов - cherry-pick</li>
+						</ul>
+					</li>
+					<li>9 Git – Перемещение коммитов
+						<ul>
+							<li onclick="RPClass(this);">9.1 Перебазирование вместо слияния - rebase</li>
+							<li onclick="RPClass(this);">9.2 Rebase и merge - сравнение подходов</li>
+							<li onclick="RPClass(this);">9.3 Rebase с тестами, флаг -x</li>
+							<li onclick="RPClass(this);">9.4 Перенос части ветки, rebase --onto</li>
+							<li onclick="RPClass(this);">9.5 Перебазирование слияний, --rebase-merges</li>
+							<li onclick="RPClass(this);">9.6 Интерактивное перебазирование, rebase -i</li>
+							<li onclick="RPClass(this);">9.7 Исправляем коммит посередине ветки - autosquash</li>
+						</ul>
+					</li>
+					<li>10. Git – Отмена коммитов через revert
+						<ul>
+							<li onclick="RPClass(this);">10.1 Обратные коммиты, revert</li>
+							<li onclick="RPClass(this);">10.2 Отмена слияния через revert</li>
+							<li onclick="RPClass(this);">10.3 Повторное слияние с rebase</li>
+						</ul>
+					</li>
+				</ul>
+				<p class="head">Git-Разное.</p>
+				<ul>
+					<li>1. Git – Теги
+						<ul>
+							<li onclick="RPClass(this);">1.1 Теги, основные действия с тегами</li>
+							<li onclick="RPClass(this);">1.2 Использование тегов для релиза с describe и archive</li>
+						</ul>
+					</li>
+					<li>2. Git – Продвинутый diff
+						<ul>
+							<li onclick="RPClass(this);">2.1 Сравнение по словам, драйвер diff</li>
+							<li onclick="RPClass(this);">2.2 Сравнение картинок и не только с git diff</li>
+						</ul>
+					</li>
+					<li>3. Git – ReReRe
+						<ul>
+							<li onclick="RPClass(this);">3.1 Авторазрешение одинаковых конфликтов</li>
+						</ul>
+					</li>
+					<li>4. Git
+						<ul>
+							<li onclick="RPClass(this);">4.1 Сборка мусора</li>
+						</ul>
+					</li>
+					<li>5. Git – Продвинутая конфигурация
+						<ul>
+							<li onclick="RPClass(this);">5.1 Настройка редактора</li>
+							<li onclick="RPClass(this);">5.2 Проблема с переводами строк Windows-Linux</li>
+							<li onclick="RPClass(this);">5.3 Нормализация переводов строк, core.autocrlf</li>
+							<li onclick="RPClass(this);">5.4 Атрибуты - .gitattributes, text, eol</li>
+							<li onclick="RPClass(this);">5.5 Формат файла .gitignore</li>
+							<li onclick="RPClass(this);">5.6 Подключение файлов в конфиг - include</li>
+						</ul>
+					</li>
+					<li>6. Git – Продвинутое слияние
+						<ul>
+							<li onclick="RPClass(this);">6.1 Объединение всех изменений, драйверы слияния</li>
+							<li onclick="RPClass(this);">6.2 Стратегии слияния</li>
+						</ul>
+					</li>
+					<li>7. Git – Дополнительные виды reset
+						<ul>
+							<li onclick="RPClass(this);">7.1 --keep - жёсткий с сохранением изменений</li>
+							<li onclick="RPClass(this);">7.2 --merge - для отмены слияний</li>
+						</ul>
+					</li>
+					<li>8. Git – Даты в git
+						<ul>
+							<li onclick="RPClass(this);">8.1 Ввод даты, форматы дат в git</li>
+							<li onclick="RPClass(this);">8.2 Вывод даты, форматирование</li>
+						</ul>
+					</li>
+					<li>9. Git – Просмотр эквивалентных коммитов
+						<ul>
+							<li onclick="RPClass(this);">9.1 Команды cherry, log --cherry-mark</li>
 						</ul>
 					</li>
 				</ul>
