@@ -12,6 +12,6 @@ Video Channel: https://www.youtube.com/c/JavaScriptru-videos
 
 ScreenCast on Git: https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h
 
-Git. курс: https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb
+Git-Kurse: https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb
 
-Git. разное: https://www.youtube.com/playlist?list=PLDyvV36pndZEB7kWWocU4QSn-G78LoaEE
+Git-Else: https://www.youtube.com/playlist?list=PLDyvV36pndZEB7kWWocU4QSn-G78LoaEE
