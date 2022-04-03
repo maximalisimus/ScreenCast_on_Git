@@ -10,4 +10,8 @@ English Description: "Video tutorials on GIT from the youtube channel JavaScript
 
 Video Channel: https://www.youtube.com/c/JavaScriptru-videos
 
-PlayList: https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h
+ScreenCast on Git: https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h
+
+Git. курс: https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb
+
+Git. разное: https://www.youtube.com/playlist?list=PLDyvV36pndZEB7kWWocU4QSn-G78LoaEE
